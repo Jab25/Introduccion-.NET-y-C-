@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3ecd316a-10b5-4269-a184-13a7ad84f5bd": {
+      "ProjectGuid": "3ecd316a-10b5-4269-a184-13a7ad84f5bd",
+      "DisplayName": "HolaMundo",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
