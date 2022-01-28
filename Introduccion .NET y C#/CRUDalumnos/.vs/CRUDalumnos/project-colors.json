@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "64ca2428-db95-446e-a21d-c9fc39ec55a0": {
+      "ProjectGuid": "64ca2428-db95-446e-a21d-c9fc39ec55a0",
+      "DisplayName": "Datos",
+      "ColorIndex": 0
+    },
+    "1b433fbc-bb3b-45f2-805d-b1cdc1d0dde2": {
+      "ProjectGuid": "1b433fbc-bb3b-45f2-805d-b1cdc1d0dde2",
+      "DisplayName": "Negocios",
+      "ColorIndex": 1
+    },
+    "166182db-49c5-4fed-a468-80c37ff0423b": {
+      "ProjectGuid": "166182db-49c5-4fed-a468-80c37ff0423b",
+      "DisplayName": "Entidades",
+      "ColorIndex": 2
+    },
+    "7a74f66a-142b-4ed6-9494-2cbd72d75ffc": {
+      "ProjectGuid": "7a74f66a-142b-4ed6-9494-2cbd72d75ffc",
+      "DisplayName": "Presentacion",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

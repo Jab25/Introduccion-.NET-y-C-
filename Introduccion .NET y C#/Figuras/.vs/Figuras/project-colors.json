@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "916d31c1-551d-41c2-a60b-57084c86e0a1": {
+      "ProjectGuid": "916d31c1-551d-41c2-a60b-57084c86e0a1",
+      "DisplayName": "Figuras",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
