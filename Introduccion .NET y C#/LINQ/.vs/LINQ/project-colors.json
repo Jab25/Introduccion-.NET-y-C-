@@ -5,6 +5,11 @@
       "ProjectGuid": "2479e98a-e523-471b-ad30-5f4918015d59",
       "DisplayName": "LINQ",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1

@@ -14,6 +14,7 @@ namespace Datos
     {
         string conection = ConfigurationManager.ConnectionStrings["LocalConnection"].ConnectionString;
         List<Alumno> listAlumno;
+        List<TablaISR> listTablaISR;
         SqlCommand comando;
 
         public List<Alumno> consultar()
@@ -50,9 +51,9 @@ namespace Datos
                     alumno.telefono = reader.GetString(5);
                     alumno.fechaNacimiento = reader.GetDateTime(6);
                     alumno.curp = reader.GetString(7);
-                    //alumno.sueldo = reader.GetString(8);
-                    alumno.idEstadoOrigen = reader.GetInt32(8);
-                    alumno.idEstatus = reader.GetInt16(9);
+                    alumno.sueldo = reader.GetDecimal(8);
+                    alumno.idEstadoOrigen = reader.GetInt32(9);
+                    alumno.idEstatus = reader.GetInt16(10);
                 }
                 con.Close();
             }
@@ -112,6 +113,31 @@ namespace Datos
                 con.Open();
                 comando.ExecuteNonQuery();
                 con.Close();
+            }
+        }
+
+        public List<TablaISR> ConsultarTablaISR()
+        {
+            using (SqlConnection con = new SqlConnection(conection))
+            {
+                comando = new SqlCommand("ConsultarTablaISR", con);
+                comando.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                SqlDataReader reader = comando.ExecuteReader();
+                listTablaISR = new List<TablaISR>();
+                while (reader.Read())
+                {
+                    listTablaISR.Add(new TablaISR
+                    {
+                        límiteinferior = reader.GetDecimal(1),
+                        límitesuperior = reader.GetDecimal(2),
+                        cuotaFija = reader.GetDecimal(3),
+                        excedente = reader.GetDecimal(4),
+                        subsidio = reader.GetDecimal(5),
+                    });
+                }
+                con.Close();
+                return listTablaISR;
             }
         }
     }

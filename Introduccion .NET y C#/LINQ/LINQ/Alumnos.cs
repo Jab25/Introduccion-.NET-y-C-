@@ -8,6 +8,10 @@ namespace LINQ
 {
     internal class Alumnos
     {
-        _lstAlumnos = new List<int>{};
+        public int id { get; set; }
+        public string nombre { get; set; }
+        public decimal calificacion { get; set; }
+        public int idEstado { get; set; }
+        public int idEstatus { get; set; }
     }
 }

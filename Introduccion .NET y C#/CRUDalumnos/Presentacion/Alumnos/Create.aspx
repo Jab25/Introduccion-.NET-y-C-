@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Create.aspx.cs" Inherits="Presentacion.Alumnos.Create" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="form-horizontal">
+    <div class="form-vertical">
     <h2>AGREGAR ALUMNO</h2>
     <hr />
     <div class="form-group">
@@ -22,7 +22,6 @@
         <div>
             <asp:TextBox ID="txtSegApe" runat="server" CssClass="form-control text-box single-line"></asp:TextBox>
         </div>
-       <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Llenar todos los campos" ControlToValidate="txtSegApe" CssClass="text-danger"></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
         <asp:Label ID="Label6" runat="server" class="control-label col-md-2">Correo</asp:Label>
@@ -34,6 +33,7 @@
     <div class="form-group">
         <asp:Label ID="Label7" runat="server" class="control-label col-md-2">Telefono</asp:Label>
         <div>
+            <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control text-box single-line"></asp:TextBox>
         </div>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Ingresar solo 10 digitos" ControlToValidate="txtTelefono" CssClass="text-danger" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
     </div>
@@ -42,7 +42,7 @@
         <div>
             <asp:TextBox ID="txtFecNac" runat="server" CssClass="form-control text-box single-line" TextMode="Date"></asp:TextBox>
         </div>
-        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtFecNac" CssClass="text-danger" ErrorMessage="Fuera del limite" MaximumValue="1997/12/31" MinimumValue="1991/01/01" Type="Date"></asp:RangeValidator>
+        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtFecNac" CssClass="text-danger" ErrorMessage="Fuera del limite" MaximumValue="2000/12/31" MinimumValue="1990/01/01" Type="Date"></asp:RangeValidator>
     </div>
     <div class="form-group">
         <asp:Label ID="Label5" runat="server" class="control-label col-md-2">CURP</asp:Label>
@@ -56,14 +56,12 @@
         <div>
             <asp:DropDownList ID="ddlEstado" runat="server" Height="35px" Width="317px" CssClass="form-control text-box single-line"></asp:DropDownList>
         </div>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="No ha seleccionado Estado" ControlToValidate="ddlEstado" CssClass="text-danger"></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
         <asp:Label ID="Label9" runat="server" class="control-label col-md-2">Estatus</asp:Label>
         <div>
             <asp:DropDownList ID="ddlEstatus" runat="server" CssClass="form-control text-box single-line" Height="35px" Width="315px"></asp:DropDownList>
         </div>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="No ha seleccionado Estatus" ControlToValidate="ddlEstatus" CssClass="text-danger"></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
         <div>

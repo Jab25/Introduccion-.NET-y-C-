@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocios;
 using Entidades;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace Presentacion.Alumnos
 {
@@ -17,7 +19,6 @@ namespace Presentacion.Alumnos
             if (!IsPostBack)
             {
                 string id = Request.QueryString["id"];
-                id = id == null ? "13" : id;
                 NAlumno nalumno = new NAlumno();
                 Alumno alumno = nalumno.Consultar(int.Parse(id));
                 lblID.Text = alumno.id.ToString();
@@ -32,5 +33,17 @@ namespace Presentacion.Alumnos
                 lblEstatus.Text = alumno.idEstatus.ToString();
             }
         }
+
+        protected void btnIMSS_Click(object sender, EventArgs e)
+        {
+            NAlumno nalumno = new NAlumno();
+            AportacionesIMSS aport = nalumno.CalcularIMSS(Convert.ToInt32(lblID.Text));
+            EM.Text= aport.enfermedadMaternidad.ToString();
+            IV.Text= aport.invalidezVida.ToString();
+            RO.Text= aport.retiro.ToString();
+            CA.Text= aport.cesantía.ToString();
+            CI.Text= aport.infonavit.ToString();
+            mpeModal.Show();
+        }            
     }
 }

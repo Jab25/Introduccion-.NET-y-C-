@@ -10,8 +10,11 @@ namespace LINQ
     internal class Program
     {
         static void Main(string[] args)
-        {
-            JsonConvert.SerializeObject(new );
+         {
+            //JsonConvert.SerializeObject(new );
+            OperacionesLINQ opLINQ = new OperacionesLINQ();
+            opLINQ.Consultas();
+            Console.ReadLine();
         }
     }
 }
