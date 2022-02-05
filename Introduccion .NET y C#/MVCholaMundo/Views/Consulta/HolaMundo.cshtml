@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "HolaMundo";
+}
+
+<h2>Bienvenido</h2>
+
+<p>Hoy es @DateTime.Now</p>
+
+@{
+    var fecha = DateTime.Now;
+    var hora = fecha.Hour;
+
+    if (hora >= 5 && hora <= 12)
+    {
+        <p>Buenos dias</p>
+    }
+
+    if (hora >= 1 && hora <= 19)
+    {
+        <p>Buenas Tardes</p>
+    }
+
+    if(hora >= 19 && hora <= 4)
+    {
+        <p> Buenas noches </p>
+    }
+
+<p>
+    @Request.Url;
+    @Request.FilePath;
+    @Request.PhysicalPath;
+    @Request.RequestType;
+</p>
+}

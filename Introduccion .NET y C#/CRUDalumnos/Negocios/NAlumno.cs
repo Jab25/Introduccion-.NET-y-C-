@@ -40,8 +40,10 @@ namespace Negocios
                                  cuotaFija = isr.cuotaFija,
                                  excedente = isr.excedente,
                                  subsidio = isr.subsidio,
-                                 impuesto = ((((quincenal) - isr.límiteinferior) 
-                                 * (isr.excedente / 100)) + isr.cuotaFija) - isr.subsidio
+                                 impuesto = (((quincenal - isr.límiteinferior)*(isr.excedente/100)+isr.cuotaFija)-isr.subsidio)
+                                 
+                                 //((((quincenal) - isr.límiteinferior) 
+                                 //* (isr.excedente / 100)) + isr.cuotaFija) - isr.subsidio
                              };
             var nec = calculoISR.FirstOrDefault();
             return nec;

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CapacitacionModel1StoreContainer" CdmEntityContainer="CapacitacionEntities1">
+    <EntitySetMapping Name="Alumnos">
+      <EntityTypeMapping TypeName="CapacitacionModel1.Alumnos">
+        <MappingFragment StoreEntitySet="Alumnos">
+          <ScalarProperty Name="id_alumnos" ColumnName="id_alumnos" />
+          <ScalarProperty Name="nombre_alumno" ColumnName="nombre_alumno" />
+          <ScalarProperty Name="primerApellido_alumno" ColumnName="primerApellido_alumno" />
+          <ScalarProperty Name="segundoApellido_alumno" ColumnName="segundoApellido_alumno" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="fechaNacimiento" ColumnName="fechaNacimiento" />
+          <ScalarProperty Name="curp" ColumnName="curp" />
+          <ScalarProperty Name="sueldo" ColumnName="sueldo" />
+          <ScalarProperty Name="idEstadoOrigen" ColumnName="idEstadoOrigen" />
+          <ScalarProperty Name="idEstatus" ColumnName="idEstatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estados">
+      <EntityTypeMapping TypeName="CapacitacionModel1.Estados">
+        <MappingFragment StoreEntitySet="Estados">
+          <ScalarProperty Name="id_Estados" ColumnName="id_Estados" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EstatusAlumnos">
+      <EntityTypeMapping TypeName="CapacitacionModel1.EstatusAlumnos">
+        <MappingFragment StoreEntitySet="EstatusAlumnos">
+          <ScalarProperty Name="id_EstatusAlumnos" ColumnName="id_EstatusAlumnos" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

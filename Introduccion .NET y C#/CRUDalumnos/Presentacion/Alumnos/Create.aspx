@@ -34,7 +34,7 @@
         <asp:Label ID="Label7" runat="server" class="control-label col-md-2">Telefono</asp:Label>
         <div>
             <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control text-box single-line"></asp:TextBox>
-        </div>
+        </div><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Llenar todos los campos" ControlToValidate="txtTelefono" CssClass="text-danger"></asp:RequiredFieldValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Ingresar solo 10 digitos" ControlToValidate="txtTelefono" CssClass="text-danger" ValidationExpression="[0-9]{10}"></asp:RegularExpressionValidator>
     </div>
     <div class="form-group">

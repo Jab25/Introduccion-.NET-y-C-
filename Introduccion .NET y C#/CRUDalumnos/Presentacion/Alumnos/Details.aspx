@@ -112,7 +112,7 @@
                 <div class="modal-body">
 		  <dl class="dl-horizontal">
 			<dt>
-				Enfermedades y Maternidad
+				Enfermedades y Maternidad: 
 			</dt>
 			<dd>
 				<asp:Label ID="EM" runat="server" Text="-"></asp:Label>
@@ -120,7 +120,7 @@
 		</dl>
 		  <dl class="dl-horizontal">
 			<dt>
-				Invalidez y Vida
+				Invalidez y Vida: 
 			</dt>
 			<dd>
 				<asp:Label ID="IV" runat="server" Text="-"></asp:Label>
@@ -128,7 +128,7 @@
 		</dl>
 		  <dl class="dl-horizontal">
 			<dt>
-				Retiro
+				Retiro: 
 			</dt>
 			<dd>
 				<asp:Label ID="RO" runat="server" Text="-"></asp:Label>
@@ -136,7 +136,7 @@
 		</dl>
 		  <dl class="dl-horizontal">
 			<dt>
-				Cesantia
+				Cesantia: 
 			</dt>
 			<dd>
 				<asp:Label ID="CA" runat="server" Text="-"></asp:Label>
@@ -144,7 +144,7 @@
 		</dl>
 		  <dl class="dl-horizontal">
 			<dt>
-				Credito Infonavit
+				Credito Infonavit: 
 			</dt>
 			<dd>
 				<asp:Label ID="CI" runat="server" Text="-"></asp:Label>
@@ -179,7 +179,7 @@
                 <!-- Curepo de la Modal -->
                 <div class="modal-body">    
                     <dl>
-                        <dt>límite inferior
+                        <dt>límite inferior: 
                         </dt>
                         <dd>
                             <asp:Label ID="lblLimInt" runat="server" Text="Label"></asp:Label>
@@ -189,7 +189,7 @@
 
 				<div class="modal-body">    
                     <dl>
-                        <dt>límite superior
+                        <dt>límite superior: 
                         </dt>
                         <dd>
                             <asp:Label ID="lblsup" runat="server" Text="Label"></asp:Label>
@@ -199,7 +199,7 @@
 
 				<div class="modal-body">    
                     <dl>
-                        <dt>cuota Fija
+                        <dt>cuota Fija: 
                         </dt>
                         <dd>
                             <asp:Label ID="lblcuota" runat="server" Text="Label"></asp:Label>
@@ -209,7 +209,7 @@
 
 				<div class="modal-body">    
                     <dl>
-                        <dt>excedente
+                        <dt>excedente: 
                         </dt>
                         <dd>
                             <asp:Label ID="lblexede" runat="server" Text="Label"></asp:Label>
@@ -219,7 +219,7 @@
 
 				<div class="modal-body">    
                     <dl>
-                        <dt>subsidio
+                        <dt>subsidio: 
                         </dt>
                         <dd>
                             <asp:Label ID="lblsub" runat="server" Text="Label"></asp:Label>
@@ -229,7 +229,7 @@
 
 				<div class="modal-body">    
                     <dl>
-                        <dt>impuesto
+                        <dt>impuesto: 
                         </dt>
                         <dd>
                             <asp:Label ID="lblimpuest" runat="server" Text="Label"></asp:Label>
